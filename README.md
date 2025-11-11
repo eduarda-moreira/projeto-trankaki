@@ -90,17 +90,31 @@ Acesse em [http://localhost:5173](http://localhost:5173)
 
 A interface foi desenvolvida com **shadcn/ui** e **Tailwind**, priorizando clareza e responsividade.
 
-![Screenshot da aplicação](./src/assets/trankaki.svg)
-
 ---
+## 🗂️ Estrutura do Projeto
 
-## 🧠 Conceitos Envolvidos
-
-- Transações SQL (`BEGIN`, `COMMIT`, `ROLLBACK`)
-- Relações entre tabelas (`JOIN`, `GROUP BY`)
-- Filtros dinâmicos com `ILIKE` e `OVERLAPS`
-- Operações CRUD integradas ao front-end
-- Geração de relatórios e exportação CSV
+```bash
+TRANKAKI/
+├── trankaki_backend/
+│   ├── node_modules/
+│   ├── db.js              # Conexão com o PostgreSQL (pool e query)
+│   ├── popular.js         # Script opcional para popular o banco
+│   ├── server.js          # Servidor Express + rotas REST
+│   ├── package.json
+│   └── package-lock.json
+│
+└── trankaki_frontend/
+    ├── node_modules/
+    ├── public/
+    │   └── trankaki.svg   # Logo usada na aplicação
+    ├── src/
+    │   ├── assets/
+    │   ├── components/    # Componentes de UI (Button, Card, etc.)
+    │   ├── lib/
+    │   ├── App.css
+    │   ├── App.tsx        # Interface principal React
+    │   ├── index.css
+    │   └── main.tsx
 
 ---
 
