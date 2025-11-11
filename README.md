@@ -91,6 +91,7 @@ Acesse em [http://localhost:5173](http://localhost:5173)
 A interface foi desenvolvida com **shadcn/ui** e **Tailwind**, priorizando clareza e responsividade.
 
 ---
+
 ## 🗂️ Estrutura do Projeto
 
 ```bash
@@ -116,7 +117,7 @@ TRANKAKI/
     │   ├── index.css
     │   └── main.tsx
 
----
+```
 
 ## 👥 Autores
 
