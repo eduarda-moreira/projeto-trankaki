@@ -4,13 +4,9 @@ const path = require('path');
 const { Pool } = require('pg');
 const csv = require('csv-parser');
 
-// -------------------------------------------------------------------
-// ⚠️ COLOQUE A SUA CONNECTION STRING DO NEON AQUI
-// (Encontre em: Neon -> Dashboard -> Connection Details -> Connection string)
-// -------------------------------------------------------------------
+
 const connectionString = 'postgresql://neondb_owner:npg_TQRa1SWw5KlN@ep-soft-dew-aeznnvvq-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require'; 
-// Ex: "postgresql://user:password@host.neon.tech/trankaki?sslmode=require"
-// -------------------------------------------------------------------
+
 
 if (connectionString === 'SUA_CONNECTION_STRING_AQUI') { 
   console.error('ERRO: Por favor, edite o ficheiro "popular.js" e insira a sua connection string do Neon.');
@@ -76,10 +72,7 @@ async function processarCSV(filePath, tableName, processRowCallback = null) {
   }
 }
 
-/**
- * * ESTA É A FUNÇÃO QUE CORRIGE O SEU PROBLEMA
- * * Remove as aspas simples (') extras no final das colunas nome e cargo.
- */
+
 function corrigirFuncionario(row) {
   // O ficheiro CSV tem os nomes das colunas entre aspas, ex: '"nome"'
   // O parser pode ler essas aspas, então tratamos os dois casos.

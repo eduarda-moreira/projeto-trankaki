@@ -1,7 +1,6 @@
 // Ficheiro: db.js
 const { Pool } = require('pg');
 
-// ⚠️ COLOQUE A SUA MESMA CONNECTION STRING AQUI
 const connectionString = 'postgresql://neondb_owner:npg_TQRa1SWw5KlN@ep-soft-dew-aeznnvvq-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require'; 
 
 if (connectionString.includes('SUA_CONNECTION_STRING_AQUI')) {
