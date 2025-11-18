@@ -1,4 +1,5 @@
 # 🏖️ Trankaki – Sistema de Gestão de Armários de Praia
+[https://projeto-trankaki.vercel.app/](https://projeto-trankaki.vercel.app/)
 
 Projeto final desenvolvido para a disciplina **Banco de Dados II (Prof. Leo)**.  
 O **Trankaki** é uma aplicação completa (front-end + back-end) para o controle de armários de praia, permitindo:
@@ -56,14 +57,19 @@ Por padrão, o servidor roda em [http://localhost:3000](http://localhost:3000)
 ## 💻 Configuração do Front-end
 
 
-### 1. Executar a aplicação
+### 1. Executar a aplicação (localmente)
 ```bash
 npm run dev
 ```
 
 Acesse em [http://localhost:5173](http://localhost:5173)
 
+### 2. Navegar pela aplicação (servidor - VERCEL)
+
+Acesse em [https://projeto-trankaki.vercel.app/](https://projeto-trankaki.vercel.app/)
+
 ---
+
 
 ## 🧭 Funcionalidades
 
